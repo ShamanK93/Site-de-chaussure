@@ -1,49 +1,151 @@
+/* RESET DE BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 20px;
-}
-
-h1, h2 {
+    background-color: #f4f4f4;
     color: #333;
 }
 
-form {
+/* HEADER */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #4caf50;
+}
+
+/* SECTION D'ACCUEIL */
+#accueil {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eaeaea;
+}
+
+#accueil h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
+}
+
+#accueil p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#accueil .btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#accueil .btn:hover {
+    background-color: #45a049;
+}
+
+/* FORMULAIRES */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 form label {
     display: block;
-    margin: 10px 0 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-form input, form select, form textarea, form button {
-    padding: 10px;
-    margin-bottom: 10px;
+form input,
+form select,
+form textarea {
     width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
-    background-color: #007BFF;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
     border: none;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* TABLEAU DES PRODUITS ET CATÉGORIES */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul li {
-    background: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4caf50;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }
